@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	div.container
+	div.jumbotron
+		h1.title=Ledger
+		h1.title='Ledger'
+		each vote in ledger.votes
+			.row
+				.col-sm-4
+					h3.title = vote.phone
+				.col-sm-2
+					h3.title = vote.hillary
+				.col-sm-2
+					h3.title = vote.hillary
+				.col-sm-2
+					h3.title = vote.hillary
+				.col-sm-2
+					h3.title = vote.hillary

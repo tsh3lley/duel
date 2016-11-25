@@ -1,0 +1,69 @@
+extends layout
+
+block content
+	div.container
+	div.jumbotron
+		form(role='form', method='POST')
+			h1.title='Vote'
+			input(type="text", name="phone", placeholder=' 800-988-2300', required)
+			.row
+				.col-sm-4
+				.col-sm-2
+					|  1
+				.col-sm-2
+					|  2
+				.col-sm-2
+					|  3
+				.col-sm-2
+					|  4
+			.row
+				.form-group
+					.col-sm-4
+						|  Hillary Clinton
+					.col-sm-2
+						input.form-control(type="radio", name="hillary", data-col="1",  value="0")
+					.col-sm-2
+						input.form-control(type="radio", name="hillary", data-col="2",  value="1")
+					.col-sm-2
+						input.form-control(type="radio", name="hillary", data-col="3",  value="2")
+					.col-sm-2
+						input.form-control(type="radio", name="hillary", data-col="4",  value="3")
+			.row
+				.form-group
+					.col-sm-4
+						|  Gary Johnson
+					.col-sm-2
+						input.form-control(type="radio", name="gary", data-col="1",  value="0")
+					.col-sm-2
+						input.form-control(type="radio", name="gary", data-col="2",  value="1")
+					.col-sm-2
+						input.form-control(type="radio", name="gary", data-col="3",  value="2")
+					.col-sm-2
+						input.form-control(type="radio", name="gary", data-col="4",  value="3")
+			.row
+				.form-group
+					.col-sm-4
+						|  Jill Stein
+					.col-sm-2
+						input.form-control(type="radio", name="jill", data-col="1", value="0")
+					.col-sm-2
+						input.form-control(type="radio", name="jill", data-col="2",  value="1")
+					.col-sm-2
+						input.form-control(type="radio", name="jill", data-col="3",  value="2")
+					.col-sm-2
+						input.form-control(type="radio", name="jill", data-col="4",  value="3")
+			.row
+				.form-group
+					.col-sm-4
+						|  Donald Trump
+					.col-sm-2
+						input.form-control(type="radio", name="donald", data-col="1",  value="0")
+					.col-sm-2
+						input.form-control(type="radio", name="donald", data-col="2",  value="1")
+					.col-sm-2
+						input.form-control(type="radio", name="donald", data-col="3",  value="2")
+					.col-sm-2
+						input.form-control(type="radio", name="donald", data-col="4",  value="3")
+			button.btn.btn-default(type='submit')
+				i.fa.fa-location-arrow
+				| Vote

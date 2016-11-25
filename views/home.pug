@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 ---
+  h1=result
+  hr
+  .row
+    .col-sm-4
+      h1=user.wins 
+      h2 Rock
+      p
+        a.btn.btn-default(href='/rock', role='button') View details »
+    .col-sm-4
+      h1=user.games 
+      h2 Paper
+      p
+        a.btn.btn-default(href='/paper', role='button') View details »
+    .col-sm-4
+      h1=user.losses 
+      h2 Scissors
+      p
+        a.btn.btn-default(href='/scissors', role='button') View details »
